@@ -20,4 +20,4 @@ ip.list_series('Selic')
 '''
 st.code(code, language='python')
 
-ip.list_series('Selic')
+st.write(ip.list_series('Selic'))
