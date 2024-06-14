@@ -50,16 +50,15 @@ st.pyplot(fig)
 '''
 st.code(code, language='python')
 
-2022 = ip.timeseries('BM12_TJOVER12', year=2022)
-2023 = ip.timeseries('BM12_TJOVER12', year=2023)
+df1 = ip.timeseries('BM12_TJOVER12', year=2022)
+df2 = ip.timeseries('BM12_TJOVER12', year=2023)
 
 fig, ax = plt.subplots()
-2022.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
+df1.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-2022.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
-
+df2.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
 st.pyplot(fig)
 
 "---"
