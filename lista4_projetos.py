@@ -62,10 +62,6 @@ st.code(code, language='python')
 
 st.write(df.groupby('ano').sum())
 
-if st.checkbox('Mostrar dataframe'):
-    
-    st.dataframe(df) 
-
 "---"
 
 st.write("Geração do gráfico de dispersão cruzando os dados do `Projeto1` e `Projeto2`, com marcadores verdes e em formato de estrela")
