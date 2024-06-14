@@ -49,10 +49,7 @@ st.code(code, language='python')
 
 df1 = pd.DataFrame({'mes': [12], 'ano': [2023], 'Projeto1': [29376], 'Projeto2': [40392], 'Projeto3': [63648], 'Projeto4': [29376], 'Projeto5': [25704] })
 df = pd.concat([df, df1])
-
-if st.checkbox('Mostrar dataframe'):
-    
-    st.dataframe(df)
+st.write(df)
 
 "---"
 
