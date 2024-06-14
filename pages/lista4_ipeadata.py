@@ -54,11 +54,11 @@ df1 = ip.timeseries('BM12_TJOVER12', year=2022)
 df2 = ip.timeseries('BM12_TJOVER12', year=2023)
 
 fig, ax = plt.subplots()
-df1.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
+df1.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
-df2.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
+df2.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
 st.pyplot(fig)
 
 "---"
