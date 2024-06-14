@@ -45,10 +45,12 @@ df2 = ip.timeseries('BM12_TJOVER12', year=2023)
 
 fig, ax = plt.subplots()
 df1.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+ax.set_title('Meses e Valores de Taxa 2022')
 st.pyplot(fig)
 
 fig, ax = plt.subplots()
 df2.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+ax.set_title('Meses e Valores de Taxa 2023')
 st.pyplot(fig)
 '''
 st.code(code, language='python')
