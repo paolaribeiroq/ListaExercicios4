@@ -48,7 +48,7 @@ st.pyplot(fig)
 st.code(code, language='python')
 
 fig, ax = plt.subplots()
-selic(year=2021).plot("MONTH", "VALUE ((% a.m.)), ax=ax")
+selic.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
 st.pyplot(fig)
 
 "---"
