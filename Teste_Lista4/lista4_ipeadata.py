@@ -28,12 +28,12 @@ st.write('Utilização da biblioteca do IPEADATA para apresentar os valores do i
 
 code = '''
 selic = ip.timeseries('BM12_TJOVER12', yearGreaterThan=2021, yearSmallerThan=2024)
-st.write('selic')
+st.write(selic)
 '''
 st.code(code, language='python')
 
 selic = ip.timeseries('BM12_TJOVER12', yearGreaterThan=2021, yearSmallerThan=2024)
-st.write('selic')
+st.write(selic)
 
 "---"
 
