@@ -26,7 +26,7 @@ df = pd.read_csv(arquivo, sep=';')
 
 if st.checkbox('Mostrar dataframe'):
     
-    st.dataframe(df) 
+    st.dataframe(df.head(23)) 
 
 "---"
 
