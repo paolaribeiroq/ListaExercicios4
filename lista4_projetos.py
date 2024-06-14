@@ -17,13 +17,13 @@ st.write('Os dados se referem aos valores futuros previstos para receita mensal 
 code = '''
 arquivo = "https://raw.githubusercontent.com/paolaribeiroq/ListaExercicios4/main/projetos-1.csv" 
 df = pd.read_csv(arquivo, sep=';') 
-st.dataframe(dfe.head(23))
+st.dataframe(df.head(23))
 '''
 st.code(code, language='python')
 
 arquivo = "https://raw.githubusercontent.com/paolaribeiroq/ListaExercicios4/main/projetos-1.csv" 
 df = pd.read_csv(arquivo, sep=';') 
-st.dataframe(dfe.head(23))
+st.dataframe(df.head(23))
 
 if st.checkbox('Mostrar dataframe'):
     
