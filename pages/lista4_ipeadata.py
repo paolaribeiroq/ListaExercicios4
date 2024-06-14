@@ -40,16 +40,6 @@ st.write(selic)
 st.write('Gráficos de linha, apresentando os meses e valores das taxas, um para o ano de 2022 e outro para o ano de 2023')
 
 code = '''
-2022 = ip.timeseries('BM12_TJOVER12', year=2022)
-2023 = ip.timeseries('BM12_TJOVER12', year=2023)
-
-fig, ax = plt.subplots()
-2022.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
-2023.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
-st.pyplot(fig)
-'''
-st.code(code, language='python')
-
 df1 = ip.timeseries('BM12_TJOVER12', year=2022)
 df2 = ip.timeseries('BM12_TJOVER12', year=2023)
 
@@ -59,6 +49,21 @@ st.pyplot(fig)
 
 fig, ax = plt.subplots()
 df2.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+st.pyplot(fig)
+'''
+st.code(code, language='python')
+
+df1 = ip.timeseries('BM12_TJOVER12', year=2022)
+df2 = ip.timeseries('BM12_TJOVER12', year=2023)
+
+fig, ax = plt.subplots()
+df1.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+ax.set_title('Meses e Valores de Taxa 2022')
+st.pyplot(fig)
+
+fig, ax = plt.subplots()
+df2.plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+ax.set_title('Meses e Valores de Taxa 2023')
 st.pyplot(fig)
 
 "---"
