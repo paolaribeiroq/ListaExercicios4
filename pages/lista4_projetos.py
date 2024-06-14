@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 st.header("Lista de Exercícios 4") 
-st.subheader("Seja bem-vindo ao Exercício Projetos!")
+st.subheader("Seja bem-vindo ao Exercício Projetos")
 
 "---"
 
@@ -17,17 +17,16 @@ st.write('Os dados se referem aos valores futuros previstos para receita mensal 
 code = '''
 arquivo = "https://raw.githubusercontent.com/paolaribeiroq/ListaExercicios4/main/projetos-1.csv" 
 df = pd.read_csv(arquivo, sep=';') 
-st.dataframe(dfe.head(23))
+st.dataframe(df.head(23))
 '''
 st.code(code, language='python')
 
 arquivo = "https://raw.githubusercontent.com/paolaribeiroq/ListaExercicios4/main/projetos-1.csv" 
-df = pd.read_csv(arquivo, sep=';') 
-st.dataframe(dfe.head(23))
+df = pd.read_csv(arquivo, sep=';')
 
 if st.checkbox('Mostrar dataframe'):
     
-    st.dataframe(df) 
+    st.dataframe(df.head(23)) 
 
 "---"
 
@@ -62,10 +61,6 @@ st.write(df.groupby('ano').sum())
 st.code(code, language='python')
 
 st.write(df.groupby('ano').sum())
-
-if st.checkbox('Mostrar dataframe'):
-    
-    st.dataframe(df) 
 
 "---"
 
