@@ -55,7 +55,11 @@ st.code(code, language='python')
 
 fig, ax = plt.subplots()
 2022.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
-2023.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
+st.pyplot(fig)
+
+fig, ax = plt.subplots()
+2022.plot("MONTH", "VALUE ((% a.m.)), ax=ax")
+
 st.pyplot(fig)
 
 "---"
