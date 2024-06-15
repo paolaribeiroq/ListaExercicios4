@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 st.header("Lista de Exercícios 4") 
-st.subheader("Exercício Projetos")
+st.subheader("Exercício Projetos 📈🏦")
 
 "---"
 
