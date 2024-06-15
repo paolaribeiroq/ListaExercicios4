@@ -10,4 +10,4 @@ st.subheader("Seja bem-vindo!")
 
 "---"
 
-st.write('Esse app vale nota 11!')
+st.write('**Esse app vale nota 11!** 😏🤩')
