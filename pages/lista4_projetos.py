@@ -23,10 +23,7 @@ st.code(code, language='python')
 
 arquivo = "https://raw.githubusercontent.com/paolaribeiroq/ListaExercicios4/main/projetos-1.csv" 
 df = pd.read_csv(arquivo, sep=';')
-
-if st.checkbox('Mostrar dataframe'):
-    
-    st.dataframe(df.head(23)) 
+st.dataframe(df.head(23)) 
 
 "---"
 
