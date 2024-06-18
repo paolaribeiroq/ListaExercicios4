@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 st.header("Lista de Exercícios 4") 
-st.subheader("Exercício Projetos 📈🏦")
+st.subheader("Exercício Projetos")
 
 "---"
 
@@ -23,7 +23,10 @@ st.code(code, language='python')
 
 arquivo = "https://raw.githubusercontent.com/paolaribeiroq/ListaExercicios4/main/projetos-1.csv" 
 df = pd.read_csv(arquivo, sep=';')
-st.dataframe(df.head(23)) 
+
+if st.checkbox('Mostrar dataframe'):
+    
+    st.dataframe(df.head(23)) 
 
 "---"
 
@@ -46,10 +49,7 @@ st.code(code, language='python')
 
 df1 = pd.DataFrame({'mes': [12], 'ano': [2023], 'Projeto1': [29376], 'Projeto2': [40392], 'Projeto3': [63648], 'Projeto4': [29376], 'Projeto5': [25704] })
 df = pd.concat([df, df1])
-
-if st.checkbox('Mostrar dataframe'):
-    
-    st.write(df)
+st.write(df)
 
 "---"
 
